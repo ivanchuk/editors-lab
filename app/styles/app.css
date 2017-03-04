@@ -1,0 +1,21 @@
+.rpc-container {
+  text-align: center;
+}
+
+.rpc-container div {
+  display: inline-block;
+  padding: 20px;
+  width: 250px;
+}
+
+.rbc-label-start {
+  font-family: fontawesome;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.rbc-center-text {
+  font-family: 'Roboto', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial;
+  fill: #000;
+  font-size: 45px;
+}

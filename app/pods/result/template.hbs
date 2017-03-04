@@ -1,0 +1,14 @@
+{{#link-to 'list'}}Volver{{/link-to}}
+
+<h2>{{model.title}}</h2>
+
+{{radial-progress-chart value=percent}}
+<h4>{{success}} de {{total}}</h4>
+
+
+{{#each model.surveys as |survey|}}
+  <p>
+    {{survey.question}} {{survey-answer survey}}
+    {{if survey.isSuccess 'correcto'}}
+  </p>
+{{/each}}

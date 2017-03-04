@@ -1,0 +1,7 @@
+{{#each model as |video|}}
+  <ul>
+    <li>{{video.id}}</li>
+    <li>{{#link-to 'video' video}}{{video.title}}{{/link-to}}</li>
+<!--    <li>{{video.url}}</li>-->
+  </ul>
+{{/each}}
