@@ -49,15 +49,15 @@ function _init() {
 //  loop(10);
 }
 
-function loop(p) {
-  if (p > 100) {
-    setTimeout(function() {
-      loop(0);
-    }, 3000);
-  } else {
-    this.get('progress').update(p);
-    setTimeout(function() {
-      loop(p + 1);
-    }, 90);
-  }
-}
+//function loop(p) {
+//  if (p > 100) {
+//    setTimeout(function() {
+//      loop(0);
+//    }, 3000);
+//  } else {
+//    this.get('progress').update(p);
+//    setTimeout(function() {
+//      loop(p + 1);
+//    }, 90);
+//  }
+//}

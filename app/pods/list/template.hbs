@@ -1,7 +1,6 @@
 {{#each model as |video|}}
-  <ul>
-    <li>{{video.id}}</li>
-    <li>{{#link-to 'video' video}}{{video.title}}{{/link-to}}</li>
-<!--    <li>{{video.url}}</li>-->
-  </ul>
+  {{list-item image=video.poster
+              text=video.title
+              meta=(video-meta video)
+              on-clicked=(action 'goToVideo' video)}}
 {{/each}}

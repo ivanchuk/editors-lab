@@ -27,7 +27,7 @@ Survey.reopenClass({
         'Falso'
       ],
       editorialAnswer: 1,
-      userAnswer: 1,
+//      userAnswer: 1,
       fromSecond: 2,
       toSecond: 5,
       video: 1
@@ -40,7 +40,7 @@ Survey.reopenClass({
         'Falso'
       ],
       editorialAnswer: 0,
-      userAnswer: 1,
+//      userAnswer: 1,
       fromSecond: 10,
       toSecond: 12,
       video: 1
@@ -53,7 +53,7 @@ Survey.reopenClass({
         'Falso'
       ],
       editorialAnswer: 1,
-      userAnswer: 1,
+//      userAnswer: 1,
       fromSecond: 15,
       toSecond: 20,
       video: 1
@@ -66,7 +66,7 @@ Survey.reopenClass({
         'Falso'
       ],
       editorialAnswer: 1,
-      userAnswer: 1,
+//      userAnswer: 1,
       fromSecond: 30,
       toSecond: 40,
       video: 1
@@ -79,7 +79,7 @@ Survey.reopenClass({
         'Falso'
       ],
       editorialAnswer: 0,
-      userAnswer: 0,
+//      userAnswer: 0,
       fromSecond: 45,
       toSecond: 47,
       video: 1

@@ -1,7 +1,5 @@
 import Ember from 'ember';
 
-const {RadialProgressChart} = window;
-
 export default Ember.Controller.extend({
   total: Ember.computed.alias('model.surveys.length'),
 

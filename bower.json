@@ -6,6 +6,7 @@
     "ember-cli-test-loader": "0.2.2",
     "ember-qunit-notifications": "0.1.0",
     "radial-progress-chart": "^0.0.4",
-    "d3": "^3.5.0"
+    "d3": "^3.5.0",
+    "uikit": "^2.27.2"
   }
 }

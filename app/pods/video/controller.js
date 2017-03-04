@@ -26,19 +26,12 @@ export default Ember.Controller.extend({
     }
   },
 
-//  resume(survey) {
-//    survey.removeObserver('userAnswer', this, 'resume');
-//    survey.set('active', false);
-//    this.start(survey.get('video'));
-//  },
-
   actions: {
     updateCurrentTime(currentTime) {
       this.set('model.currentTime', currentTime);
     },
 
     ended() {
-      console.log('ended');
       this.transitionToRoute('result', this.get('model'));
     },
 

@@ -19,3 +19,25 @@
   fill: #000;
   font-size: 45px;
 }
+
+.tm-navbar {
+  position: relative;
+  padding: 15px 0;
+  border: none;
+  background: #000;
+}
+
+.tm-middle {
+  background: #fff;
+  padding: 30px 0;
+}
+
+.uk-comment-play {
+  margin-left: -40px;
+  margin-top: 1px;
+  float: left;
+  font-size: 15px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 2px 5px;
+}

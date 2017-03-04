@@ -2,13 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'video',
-  attributeBindings: ['controls', 'autoplay', 'muted', 'width', 'height'],
+  classNames: ['uk-responsive-width'],
+  attributeBindings: ['controls', 'autoplay', 'muted'],
 
   url:       null,
   playing:   false,
   logEvents: false,
   controls:  false,
-  muted:     true,
+  muted:     false,
   width:     '320',
   height:    '240',
   autoplay:  Ember.computed.alias('playing'),
@@ -30,7 +31,7 @@ export default Ember.Component.extend({
 function _init() {
   const {element} = this;
 
-  element.ontimeupdate = () => this.sendAction('on-timeupdate', this.element.currentTime);
+  element.ontimeupdate = () => this.sendAction('on-timeupdate', this.element ? this.element.currentTime : 0);
   element.onplay       = () => this.sendAction('on-play');
   element.onpause      = () => this.sendAction('on-pause');
   element.onended      = () => this.sendAction('on-ended');

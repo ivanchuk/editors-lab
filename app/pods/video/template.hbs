@@ -1,7 +1,4 @@
-{{#link-to 'list'}}Volver{{/link-to}}
-
 <h2>{{model.title}}</h2>
-<p>{{model.currentTime}}</p>
 
 {{video-player url=model.url
                playing=model.playing
@@ -19,10 +16,8 @@
       <b>{{if survey.active 'active'}}</b>
     </p>
 -->
-    <ul>
-      {{#each survey.answers as |answer index|}}
-        <li><button {{action 'response' survey index}}>{{answer}}</button></li>
-      {{/each}}
-    </ul>
+    {{#each survey.answers as |answer index|}}
+      <button class="uk-button uk-button-large uk-margin-bottom uk-width-1-1 {{answer-color answer}}" {{action 'response' survey index}}>{{answer}}</button>
+    {{/each}}
   {{/if}}
 {{/each}}

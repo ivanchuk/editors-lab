@@ -1,9 +1,15 @@
 /*jshint node:true*/
 /* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var
+  EmberApp = require('ember-cli/lib/broccoli/ember-app'),
+  pickFiles  = require('broccoli-static-compiler'),
+  mergeTrees = require('broccoli-merge-trees')
+;
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  var app, fonts;
+
+  app = new EmberApp(defaults, {
     // Add options here
   });
 
@@ -20,8 +26,16 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  fonts = pickFiles(app.bowerDirectory + '/uikit/fonts', {
+    srcDir: '/',
+    files: ['*'],
+    destDir: '/fonts'
+  });
+
+  app.import(`${app.bowerDirectory}/uikit/css/uikit.min.css`);
+  app.import(`${app.bowerDirectory}/uikit/js/uikit.min.js`);
   app.import(`${app.bowerDirectory}/d3/d3.js`);
   app.import(`${app.bowerDirectory}/radial-progress-chart/dist/radial-progress-chart.js`);
 
-  return app.toTree();
+  return mergeTrees([app.toTree(), fonts]);
 };
