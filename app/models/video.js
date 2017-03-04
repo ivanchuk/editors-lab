@@ -14,65 +14,58 @@ Video.reopenClass({
   FIXTURES: [
     {
       id: 1,
-      title: 'Discurso de Mariano Rajoy en el Debate de Investidura 26/10/2016',
+      title: 'Discurso de Mariano Rajoy en el Debate de Investidura (26/10/2016)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/people',
+      poster: 'images/rajoy.png',
       timesGamed: 80
     },
     {
       id: 2,
-      title: 'Rueda de prensa de José Manuel Soria (Ministro de Industria, Energía y Turismo) 15/04/2016',
+      title: 'El ministro José Manuel Soria explica en rueda de prensa su vinculación con el escándalo de los Papeles de Panamá (15/04/2016)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/city',
+      poster: 'images/soria.png',
       timesGamed: 124
     },
     {
       id: 3,
-      title: 'Albert Rivera (Presidente de Ciudadanos) en el Discurso de Investidura en el Congreso 02/03/2016',
+      title: 'Pablo Iglesias habla de Podemos y pide perdón por las guerras internas en el partido (02/03/2016)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/transport',
+      poster: 'images/iglesias.png',
       timesGamed: 56
     },
     {
       id: 4,
-      title: 'Pablo Iglesias (Secretario General de Podemos) en el Discurso de Investidura en el Congreso 02/03/2016',
+      title: 'El concejal del Ayuntamiento de Guipuzkoa Martín Ibade explica el polémico desalojo de los vecinos del muelle (03/02/2017)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/abstract',
+      poster: 'images/puerto.png',
       timesGamed: 56
     },
     {
       id: 5,
-      title: 'Albert Rivera (Presidente de Ciudadanos) entrevista en Onda Cero 31/03/2016',
+      title: 'Álvaro Nadal, ministro de Energía, explica en comisión la subida del recibo de la luz (26/01/17)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/animals',
+      poster: 'images/alvaro-nadal.png',
       timesGamed: 56
     },
     {
       id: 6,
-      title: 'Mariano Rajoy (Presidente del Gobierno) Sesión de control del Gobierno 30/11/2016',
+      title: 'Imanol Lasa desgrana las partidas presupuestarias de la Diputación destinadas a la I+D en Guipuzkoa (01/03/2017)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/business',
+      poster: 'images/diputacion-guipuzkoa.png',
       timesGamed: 56
     },
     {
       id: 7,
-      title: 'Miguel Gutiérrez (Secretario general del grupo parlamentario de Ciudadanos en el Congreso) entrevista en RNE 03/03/2017',
+      title: 'Rita Barberá explica en rueda de prensa por qué no dimite a pesar de ser imputada por corrupción (15/03/2016)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/cats',
+      poster: 'images/rita-barbera.png',
       timesGamed: 56
     },
     {
       id: 8,
-      title: 'Alfonso Dastis (Ministro de Exteriores) entrevista en Antena 3 12/02/2017',
+      title: 'La presidenta de la federación de comerciantes explica cómo han contribuido a mejorar el barrio dle Atza de San Sebastián (02/05/2017)',
       url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/fashion',
-      timesGamed: 56
-    },
-    {
-      id: 9,
-      title: 'Irene Montero (Miembro de la dirección de Podemos) entrevista en El Confidencial 07/02/2017',
-      url: 'rajoy-corto-12mb.mp4',
-      poster: '//lorempixel.com/100/75/food',
+      poster: 'images/altza.png',
       timesGamed: 56
     }
   ]

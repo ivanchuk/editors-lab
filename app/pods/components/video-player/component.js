@@ -8,10 +8,8 @@ export default Ember.Component.extend({
   url:       null,
   playing:   false,
   logEvents: false,
-  controls:  false,
+  controls:  true,
   muted:     false,
-  width:     '320',
-  height:    '240',
   autoplay:  Ember.computed.alias('playing'),
 
   didInsertElement() {

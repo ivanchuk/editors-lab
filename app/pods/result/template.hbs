@@ -8,6 +8,9 @@
     {{result-badge percent=percent}}
     <div class="uk-text-right"><span class="uk-h1 uk-text-bold">{{success}}</span> / {{total}}</div>
   </div>
+  <div class="uk-width-1-1 uk-margin-large-top">
+    <img src="social-icons.svg" />
+  </div>
 </div>
 
 <div class="uk-grid">
@@ -24,6 +27,7 @@
             <p><span class="uk-h2">{{loop-index index}}.</span> {{survey.question}}</p>
           </blockquote>
           <div class="uk-block uk-block-secondary uk-contrast">{{survey.check}}</div>
+          <p>El <span class="uk-h2">30%</span> de los usuarios acertó esta pregunta.</p>
         </div>
       {{/each}}
 <!--

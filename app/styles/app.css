@@ -42,6 +42,14 @@
   padding: 2px 5px;
 }
 
+.uk-comment-avatar {
+  width: 100px;
+}
+
+.uk-comment-title {
+  margin: 0;
+}
+
 .tm-result-badge {
   height: 75%;
 }
@@ -49,6 +57,10 @@
 .uk-block-secondary {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.uk-block {
+  border-bottom: 1px solid #fff;
 }
 
 .swiper-container {
