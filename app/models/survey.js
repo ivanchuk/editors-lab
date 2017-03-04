@@ -91,7 +91,7 @@ Survey.reopenClass({
       check: 'Verdadero. Una encuesta realizada por Metroscopia en septiembre reveló que siete de cada diez españoles no querían que se celebrasen unas terceras elecciones.'
     },
     {
-      id: 5,
+      id: 6,
       question: '“Más de 14 millones de personas reciben cada final de mes algún tipo de prestación pública”',
       answers: [
         'Verdadero',
@@ -105,7 +105,7 @@ Survey.reopenClass({
       check: 'Verdadero. En España hay 14,16 millones de personas que reciben alguna prestación pública. De esta cifra, 13,52 millones representan a ciudadanos con ayudas procedentes de la Seguridad Social, mientras que el resto (casi 640.000 personas) se beneficia de una renta mínima de inserción procedente de las comunidades autónomas.'
     },
     {
-      id: 5,
+      id: 7,
       question: '“No es de extrañar que el 63% de nuestro gasto público total sea gasto social”',
       answers: [
         'Verdadero',
@@ -119,7 +119,7 @@ Survey.reopenClass({
       check: 'Verdadero. El conjunto de las administraciones se gastan en Gasto Social, Sanidad y Educación seis de cada diez euros (el 62,4%), según las últimas previsiones disponibles disponibles en la Intervención General del Estado.'
     },
     {
-      id: 5,
+      id: 8,
       question: '“Las cuentas del Estado (PGE) determinan el destino del 43% del Producto Interior Bruto"',
       answers: [
         'Verdadero',

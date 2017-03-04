@@ -5,6 +5,10 @@ const INTERVAL = 1000;
 export default Ember.Controller.extend({
   timer: null,
 
+  activeSurvey: Ember.computed('model.surveys.@each.active', function() {
+    return this.get('model.surveys').filterBy('active', true).get('firstObject');
+  }),
+
   play() {
     const video = this.get('model');
 
