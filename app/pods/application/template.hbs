@@ -1,6 +1,9 @@
 <nav class="tm-navbar uk-navbar uk-navbar-attached">
   <div class="uk-container uk-container-center">
-    <div class="uk-navbar-brand uk-navbar-center"><img src="//getuikit.com/v2/docs/images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"></div>
+    {{#if showBackButton}}
+      {{#link-to 'list' class='uk-navbar-brand uk-text-contrast'}}<span class="uk-icon-chevron-left"></span>{{/link-to}}
+    {{/if}}
+    <div class="uk-navbar-brand uk-navbar-center"><img src="logo-white.svg" width="40" height="auto" title="UIkit" alt="UIkit"></div>
   </div>
 </nav>
 <div class="tm-middle">
