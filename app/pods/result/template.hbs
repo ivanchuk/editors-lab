@@ -10,24 +10,4 @@
   </div>
 </div>
 
-<div class="uk-grid">
-<!--
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
--->
-      {{#each model.surveys as |survey index|}}
-        <div class="uk-width-1-5">
-          <img class="uk-responsive-width" src="icons/{{if survey.isSuccess 'true' 'false'}}.svg" />
-        </div>
-        <div class="uk-width-4-5 uk-margin-large-bottom">
-          <blockquote>
-            <p><span class="uk-h2">{{loop-index index}}.</span> {{survey.question}}</p>
-          </blockquote>
-          <div class="uk-block uk-block-secondary uk-contrast">{{survey.check}}</div>
-        </div>
-      {{/each}}
-<!--
-    </div>
-  </div>
--->
-</div>
+{{survey-swiper surveys=model.surveys}}

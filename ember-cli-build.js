@@ -32,6 +32,8 @@ module.exports = function(defaults) {
     destDir: '/fonts'
   });
 
+  app.import(`${app.bowerDirectory}/swiper/dist/css/swiper.min.css`);
+  app.import(`${app.bowerDirectory}/swiper/dist/js/swiper.min.js`);
   app.import(`${app.bowerDirectory}/uikit/css/uikit.min.css`);
   app.import(`${app.bowerDirectory}/uikit/js/uikit.min.js`);
   app.import(`${app.bowerDirectory}/d3/d3.js`);

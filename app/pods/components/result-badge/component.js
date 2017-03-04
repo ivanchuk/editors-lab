@@ -15,10 +15,5 @@ export default Ember.Component.extend({
 
   badge3: Ember.computed('percent', function() {
     return this.get('percent') < 100 ? '-o' : '';
-  }),
-
-  didInsertElement() {
-    this._super(...arguments);
-    console.log(this.get('percent'));
-  }
+  })
 });

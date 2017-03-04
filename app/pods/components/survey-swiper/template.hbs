@@ -1,0 +1,17 @@
+<div class="swiper-wrapper">
+  {{#each surveys as |survey index|}}
+    <div class="uk-grid swiper-slide">
+      <div class="uk-width-1-5">
+        <img class="uk-responsive-width" src="icons/{{if survey.isSuccess 'true' 'false'}}.svg" />
+      </div>
+      <div class="uk-width-4-5 uk-margin-large-bottom">
+        <blockquote>
+          <p><span class="uk-h2">{{loop-index index}}.</span> {{survey.question}}</p>
+        </blockquote>
+        <div class="uk-block uk-block-secondary uk-contrast">{{survey.check}}</div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div class="swiper-pagination"></div>
