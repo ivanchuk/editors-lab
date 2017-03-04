@@ -1,14 +1,33 @@
-{{#link-to 'list'}}Volver{{/link-to}}
-
 <h2>{{model.title}}</h2>
 
-{{radial-progress-chart value=percent}}
-<h4>{{success}} de {{total}}</h4>
+<div class="uk-grid" data-uk-grid-match>
+  <div class="uk-width-1-2">
+    {{radial-progress-chart value=percent}}
+  </div>
+  <div class="uk-width-1-2">
+    {{result-badge percent=percent}}
+    <div class="uk-text-right"><span class="uk-h1 uk-text-bold">{{success}}</span> / {{total}}</div>
+  </div>
+</div>
 
-
-{{#each model.surveys as |survey|}}
-  <p>
-    {{survey.question}} {{survey-answer survey}}
-    {{if survey.isSuccess 'correcto'}}
-  </p>
-{{/each}}
+<div class="uk-grid">
+<!--
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+-->
+      {{#each model.surveys as |survey index|}}
+        <div class="uk-width-1-5">
+          <img class="uk-responsive-width" src="icons/{{if survey.isSuccess 'true' 'false'}}.svg" />
+        </div>
+        <div class="uk-width-4-5 uk-margin-large-bottom">
+          <blockquote>
+            <p><span class="uk-h2">{{loop-index index}}.</span> {{survey.question}}</p>
+          </blockquote>
+          <div class="uk-block uk-block-secondary uk-contrast">{{survey.check}}</div>
+        </div>
+      {{/each}}
+<!--
+    </div>
+  </div>
+-->
+</div>

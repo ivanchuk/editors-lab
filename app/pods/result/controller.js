@@ -11,6 +11,6 @@ export default Ember.Controller.extend({
   }),
 
   percent: Ember.computed('success', 'total', function() {
-    return (this.get('success') * 100 / this.get('total')).toFixed(2);
+    return Number((this.get('success') * 100 / this.get('total')).toFixed(2));
   })
 });

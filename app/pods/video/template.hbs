@@ -7,15 +7,11 @@
                on-play=(action 'playing' true)
                on-pause=(action 'playing' false)}}
 
-{{#each model.surveys as |survey|}}
+{{#each model.surveys as |survey index|}}
   {{#if survey.active}}
-    <p>{{survey.question}}</p>
-<!--
-    <p>
-      (desde {{survey.fromSecond}} hasta {{survey.toSecond}})
-      <b>{{if survey.active 'active'}}</b>
-    </p>
--->
+    <blockquote>
+      <p><span class="uk-h1">{{loop-index index}}.</span> {{survey.question}}</p>
+    </blockquote>
     {{#each survey.answers as |answer index|}}
       <button class="uk-button uk-button-large uk-margin-bottom uk-width-1-1 {{answer-color answer}}" {{action 'response' survey index}}>{{answer}}</button>
     {{/each}}
