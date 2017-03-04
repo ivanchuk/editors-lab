@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'editors-lab',
     podModulePrefix: 'editors-lab/pods',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/vocento/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
